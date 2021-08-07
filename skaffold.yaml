@@ -7,10 +7,10 @@ deploy:
       - ./xinfra/kubernetes/*
 # 도커 이미지 빌드 관련 설정
 build:
-  # local:
-  #   push: false
-  googleCloudBuild:
-    projectId: molten-turbine-319402
+  local:
+    push: true
+  # googleCloudBuild:
+  #  projectId: molten-turbine-319402
   artifacts:
     - image: meliushp/getmem
       context: getmem
